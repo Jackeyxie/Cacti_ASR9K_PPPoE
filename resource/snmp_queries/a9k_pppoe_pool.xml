@@ -1,0 +1,32 @@
+<interface>                                                                                            
+        <name>Get Asr9k PPPOE POOL Information</name>                                                  
+        <description>Get PPPOE POOL Information of ASR9k(BNG)</description>                            
+        <index_order_type>numeric</index_order_type>                                                   
+        <oid_index>.1.3.6.1.4.1.9.9.748.1.2.2.1.4</oid_index>                               
+                                                                                                       
+        <fields>                                                                                       
+                <ifasr9kpoolName>                                            
+                        <name>PoolName</name>                                
+                        <method>walk</method>                                
+                        <source>value</source>                               
+                        <direction>input</direction>                         
+                        <oid>.1.3.6.1.4.1.9.9.748.1.2.2.1.4</oid>            
+                </ifasr9kpoolName>                                           
+                <ifasr9kusedpool>                                                                      
+                        <name>usedpool</name>                                                          
+                        <method>walk</method>                                                          
+                        <source>value</source>                                                         
+                        <direction>output</direction>                                                  
+                        <oid>.1.3.6.1.4.1.9.9.748.1.2.2.1.10</oid>                                     
+                </ifasr9kusedpool>                                                                     
+                <ifasr9kfreepool>                                                                      
+                        <name>freepool</name>                                                          
+                        <method>walk</method>                                                          
+                        <source>value</source>                                                         
+                        <direction>output</direction>                                                  
+                        <oid>.1.3.6.1.4.1.9.9.748.1.2.2.1.11</oid>                                     
+                </ifasr9kfreepool>                                                                     
+        </fields>                                                                                      
+</interface>                                                                                           
+                                                                                                       
+
